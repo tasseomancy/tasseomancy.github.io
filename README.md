@@ -1,2 +1,2 @@
-# tasseomancy.githum.io
+# tasseomancy.github.io
 The art of divination using tea leaves
