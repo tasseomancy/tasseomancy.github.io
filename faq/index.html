@@ -15,10 +15,10 @@ title: FAQ
 	<div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse"+{{post.title}}>{{ post.title }}</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{post.title}}">{{ post.title }}</a>
                             </h4>
                         </div>
-                        <div id="collapse"+{{post.title}} class="panel-collapse collapse noCrossRef">
+                        <div id="collapse-{{post.title}}" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
                                 {{ post.content | markdownify }}
                             </div>
