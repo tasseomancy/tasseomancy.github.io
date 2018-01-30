@@ -9,3 +9,21 @@ title: FAQ
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
+
+<div class="panel-group" id="accordion">
+	{% for post in site.posts %}
+	<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">{{ post.title }}</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                {{ post.content }}
+                            </div>
+                        </div>
+                    </div>
+	{% endfor %}
+</div>
+<!-- /.panel-group -->
