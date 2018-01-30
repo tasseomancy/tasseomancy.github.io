@@ -1,0 +1,13 @@
+---
+layout: default
+title: FAQ
+---
+
+
+	<h1>{{ page.title }}</h1>
+	<ul class="faq-entry">
+
+	  {% for faq-entry in site.faq %}
+	    <li><span>{{ faq-entry.content }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
