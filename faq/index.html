@@ -10,3 +10,173 @@ title: FAQ
 	  {% endfor %}
 	</ul>
 
+<p>If you want to use an FAQ format, use the syntax shown on the faq.html page. Rather than including code samples here (which are bulky with a lot of nested <code>div</code> tags), just look at the source in the mydoc_faq.html theme file.</p>
+
+<div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Why Protelis?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                Protelis is a programming language designed for people who want to get resilient collective behavior from a complex network of heterogeneous machines. Protelis supports “aggregate programming” for applications like the Internet of Things or flocking robots. It lets you think about what you want to the collection of machines to accomplish, rather than what you need each individual machine to do.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What can I do with Protelis?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                * Peer-to-peer route planning 
+				* Distributed sensing and computing
+				* Emergent, coordinated movement for swarms
+				* Network services management
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What have people done with Protelis? Who uses it?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                            	* Projects
+					* Crowd safety and services for large urban events
+					* Aggregate Programming: From Foundations to Applications, Jacob Beal and Mirko Viroli. chapter in "Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems." ed. Marco Bernardo, Rocco De Nicola, and Jane Hillston, Springer International Publishing, pp 233-260, June 2016. (http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf)
+					* Distributed applications for augmented reality environments
+					* The Internet of Things
+						* Aggregate Programming for the Internet of Things, Jacob Beal, Danilo Pianini, and Mirko Viroli, IEEE Computer, 48(9), pp 22-30, September 2015. (http://web.mit.edu/jakebeal/www/Publications/Computer-AggregateProgramming-2015.pdf)
+					* Controlling swarms of drones
+					* Sensor sharing among airborne platforms
+						* Adaptive Task Reallocation for Airborne Sensor Sharing Jacob Beal, Kyle Usbeck, Joseph Loyall, Mason Rowe, and James Metzler, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016 (http://web.mit.edu/jakebeal/www/Publications/eCAS16-MTIP-reallocation-preprint.pdf)
+					* Decentralized migration of networked services
+					* Resilient management of distributed enterprise services
+						* Distributed Recovery for Enterprise Services, Shane S. Clark, Jacob Beal, and Partha Pal, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015. (http://web.mit.edu/jakebeal/www/Publications/SASO15-EnterpriseDistributedRecovery.pdf)
+					* Programming growth of engineered mammalian cells into small 3D shapes
+				* Places & People
+					* Università di Bologna and 
+						* http://apice.unibo.it/xwiki/bin/view/MirkoViroli/
+						* http://apice.unibo.it/xwiki/bin/view/DaniloPianini/
+						* http://apice.unibo.it/xwiki/bin/view/RobertoCasadei/
+					* Raytheon BBN Technologies, USA
+						* http://web.mit.edu/jakebeal/www/
+						* Shane Clark
+					* Università di Torino, Italy
+						* http://www.di.unito.it/damiani/
+						*Giorgio Audrito
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">What platforms can Protelis run on?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Anything with a Java 8+ JVM (such as Raspberry Pi). With some library support, Protelis is also backward compatible for Java 7.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Which programming languages is Protelis similar to?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Protelis is hosted in and integrated with Java, and looks somewhat like Java or C in terms of syntax. However, Protelis is a pure functional language. Protelis grew out of Proto, which looked more like Lisp. Note that the aggregate programming mindset is a different way of thinking about problems. This mindset is language independent.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How is Protelis different from other programming languages?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                * Protelis helps guarantee some types of bounds on performance of distributed systems. Protelis is built to use the theory of “field calculus”, a way to mathematically establish such guarantees for some critical issues like scalability or performance degradation under stress.
+				* Protelis has some operators and functions to support sending and comparing information across space and time, treating values across a region as a continuous field that is sampled at specific machine locations.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">How do I get started with Protelis?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                * Developer information (https://github.com/Protelis/Protelis)
+				* Examples
+					* Hello World demonstration (https://github.com/Protelis/Protelis-Demo)
+					* Demonstration of basic visualization and simulation (https://github.com/Protelis/Protelis-Demo-Visualized)
+					* Set of examples of simulating Protelis program in the Alchemist Simulator (https://github.com/Protelis/Protelis-Alchemist-tutorial)
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Where can I find more resources for working with Protelis?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                * Join the Protelis project on GitHub (https://github.com/Protelis)
+				* API documentation (http://protelis-doc.surge.sh/)
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Is there a simulator or visualizer for Protelis?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body">
+				* The Alchemist Simulator can be used with Protelis (https://github.com/Protelis/Protelis-Alchemist-tutorial)
+				* The NASA WorldWind GIS/visualization framework can be used with a lightweight device model for basic simulation and visualization (https://github.com/Protelis/Protelis-Demo-Visualized)
+				* BBN is working on a simulator, but it is not ready for release
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Is Protelis an agent-based modeling framework?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+				    No. Although agent-based modeling (ABM) and aggregate programming both concern phenomena that occur when many individuals interact, they approach these phenomena in different ways. In ABM, you usually specify an individual’s behavior and interaction rules, and then simulate a collection of individuals to see what large-scale phenomena occur. In aggregate programming, you specify the desired collective action, which is then transformed into a distributed implementation for individual machines.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+</div>
+<!-- /.panel-group -->
