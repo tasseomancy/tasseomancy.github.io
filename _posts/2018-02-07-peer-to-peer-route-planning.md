@@ -28,7 +28,11 @@ The function descend follows the gradient of a potential field down from a sourc
 <code style="color:purple">    if</code><code>(</code><code style="color:green">nextStep</code><code style="color:blue">.size</code><code>() > 1) {</code>
 <code style="color:red">    let</code><code style="color:green"> candidates</code><code> = (</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">nextStep</code><code style="color:blue">.get</code><code>(1), </code><code style="color:green">path</code><code>]);</code>
 <code style="color:green">    source</code><code> || </code><code style="color:purple">anyHood</code><code>([</code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>(), true] == </code><code style="color:green">candidates</code><code>)</code>
-
+<code>    } </code><code style="color:purple">else</code><code> {</code>
+</code><code style="color:green">      source</code>
+<code>   {</code>
+<code> {</code>
+<code>{</code>
 
 <pre>
 <code>
