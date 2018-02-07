@@ -11,7 +11,10 @@ Code samples and illustrations from a simulation:
 - descend
 - rendezvous 
 
-![useful image](/assets/peer-to-peer-1.png) 
-![useful image](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) 
+![useful image](/assets/peer-to-peer-1.png) relative link
+
+![useful image](peer-to-peer-1.png) file in same directory
+
+![useful image](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) full url
 
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them wish to meet up.
