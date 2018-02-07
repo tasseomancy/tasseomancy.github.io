@@ -41,3 +41,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+ctext1 {
+    color: red;
+}
+
+ctext2 {
+    color: blue;
+}
+
+ctext3 {
+    color: purple;
+}
