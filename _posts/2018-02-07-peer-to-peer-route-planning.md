@@ -11,14 +11,16 @@ Code samples and illustrations from a simulation:
 - descend
 - rendezvous 
 
-![useful image](/assets/peer-to-peer-1.png) relative link
+![description](/assets/peer-to-peer-1.png) relative link
 
-![useful image](peer-to-peer-1.png) file in same directory
+![description]({{"/assets/peer-to-peer-1.png"}} | absolute_url) braces and quotes for relative link
 
-![useful image](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) full url
+![description](peer-to-peer-1.png) file in same directory (works in preview but not page)
+
+![description](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) full url
 
 <img src = "http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png" /> html full url not markdown
 
-<img src = "peer-to-peer-1.png" /> file in same directory not markdown
+<img src = "peer-to-peer-1.png" /> file in same directory not markdown (works in preview but not page)
 
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them wish to meet up.
