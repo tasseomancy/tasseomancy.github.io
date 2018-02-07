@@ -42,14 +42,14 @@ ul.posts li {
     list-style: none;
 }
 
-ctext1 {
+h4 {
     color: red;
 }
 
-ctext2 {
+h5 {
     color: blue;
 }
 
-ctext3 {
+h6 {
     color: purple;
 }
