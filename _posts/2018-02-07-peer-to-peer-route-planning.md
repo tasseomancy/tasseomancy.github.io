@@ -13,6 +13,14 @@ test code
 </code>
 </pre>
 
+<pre>
+<code>
+<h4>
+test code
+</h4>
+</code>
+</pre>
+
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
 
 Code samples and illustrations from a simulation:
