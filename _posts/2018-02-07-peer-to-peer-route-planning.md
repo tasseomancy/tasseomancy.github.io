@@ -53,11 +53,20 @@ def descend(source,potential) {
 
 The rendezvous function uses the descend function to identify the path between two people.
 
-``` 
+<pre>
+<code style="color:red">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
+<code style="color:blue">  descend</code><code> (</code><code style="color:green">person1</code><code> == </code><code style="color:green">owner</code><code>, </code><code style="color:blue">distanceTo</code><code>(</code><code style="color:green">person2</code><code>) == </code><code style="color:green">owner</code><code>))</code>
+<code>}
+</code>
+</pre>
+
+<pre>
+<code>
 def rendezvous (person1, person2) {
   descend (person1 == owner, distanceTo(person2 == owner))
 }
-```
+</code>
+</pre>
 
 ![map with blue dots](/images/peer-to-peer-1.png)
 
