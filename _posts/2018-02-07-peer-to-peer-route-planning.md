@@ -7,20 +7,6 @@ layout: default
 <h6> test color 3 purple </h6>
 <h3> test color 4 green </h3>
 
-<pre>
-<code>
-test code
-</code>
-</pre>
-
-<pre>
-<code>
-<h4>
-test code
-</h4>
-</code>
-</pre>
-
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
 
 Code samples and illustrations from a simulation:
@@ -30,8 +16,9 @@ Using some of Protelis’s special operators (purple), a small number of functio
 The function distanceTo computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
 
 <pre>
+<code style="color:red">def</code><code style="color:blue"> distanceTo</code><code style="color:green">(source) {</code>
 <code>
-<h4>def</h4><h5> distanceTo</h5>(<h3>source</h3>) {
+def distanceTo(source) {
   rep(d <- Infinity) {
     mux (source) { 0 }
     else { minHood(nbr{d} + nbrRange) }
