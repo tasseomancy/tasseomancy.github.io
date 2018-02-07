@@ -14,7 +14,7 @@ The function distanceTo computes the minimum distance from any device to the nea
 <code style="color:red">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
 <code style="color:red">  rep</code><code>(</code><code style="color:green">d</code><code> <- Infinity) {</code>
 <code style="color:purple">    mux</code><code> (</code><code style="color:green">source</code><code>) { 0 }</code>
-<code style="color:purple">    else</code><code> { minHood(</code><code style="color:purple">nbr</code><code>{</code><code style="color:green">d</code><code>} + nbrRange) }</code>
+<code style="color:purple">    else</code><code> { minHood(</code><code style="color:purple">nbr</code><code>(</code><code style="color:green">d</code><code>) + nbrRange) }</code>
 <code>  }
 }</code>
 </pre>
@@ -26,7 +26,7 @@ The function descend follows the gradient of a potential field down from a sourc
 <code style="color:purple">  rep</code><code>(</code><code style="color:green">path</code><code> <- </code><code style="color:green">source</code><code>) {</code>
 <code style="color:red">    let</code><code style="color:green"> nextStep</code><code> = minHood(</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">potential</code><code>, </code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>()]));</code>
 <code style="color:purple">    if</code><code>(</code><code style="color:green">nextStep</code><code style="color:blue">.size</code><code>() > 1) {</code>
-<code style="color:red">    let</code><code style="color:green"> candidates</code><code> = (</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">nextStep</code><code style="color:blue">.get</code><code>(1), </code><code style="color:green">path</code><code>]);</code>
+<code style="color:red">    let</code><code style="color:green"> candidates</code><code> = (</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">nextStep</code><code style="color:blue">.get</code><code>(1), </code><code style="color:green">path</code><code>]));</code>
 <code style="color:green">    source</code><code> || </code><code style="color:purple">anyHood</code><code>([</code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>(), true] == </code><code style="color:green">candidates</code><code>)</code>
 <code>    } </code><code style="color:purple">else</code><code> {</code>
 <code style="color:green">      source</code>
