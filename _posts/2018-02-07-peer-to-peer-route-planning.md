@@ -12,5 +12,6 @@ Code samples and illustrations from a simulation:
 - rendezvous 
 
 ![useful image](/assets/peer-to-peer-1.png) 
-![useful image](peer-to-peer-1.png) 
+![useful image](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) 
+
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them wish to meet up.
