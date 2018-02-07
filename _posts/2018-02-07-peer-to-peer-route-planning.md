@@ -35,36 +35,12 @@ The function descend follows the gradient of a potential field down from a sourc
 }</code>
 </pre>
 
-<pre>
-<code>
-def descend(source,potential) {
-  rep(path <- source) {
-    let nextStep = minHood(nbr([potential, self.getId()]));
-    if (nextStep.size() > 1) {
-      let candidates = nbr([nextStep.get(1), path]);
-      source || anyHood([self.getId(), true] == candidates)
-    } else {
-      source
-    }
-  }
-}
-</code>
-</pre>
-
 The rendezvous function uses the descend function to identify the path between two people.
 
 <pre>
 <code style="color:red">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
 <code style="color:blue">  descend</code><code> (</code><code style="color:green">person1</code><code> == </code><code style="color:green">owner</code><code>, </code><code style="color:blue">distanceTo</code><code>(</code><code style="color:green">person2</code><code>) == </code><code style="color:green">owner</code><code>))</code>
 <code>}
-</code>
-</pre>
-
-<pre>
-<code>
-def rendezvous (person1, person2) {
-  descend (person1 == owner, distanceTo(person2 == owner))
-}
 </code>
 </pre>
 
