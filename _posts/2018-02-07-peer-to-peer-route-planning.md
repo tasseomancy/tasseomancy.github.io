@@ -40,8 +40,7 @@ The rendezvous function uses the descend function to identify the path between t
 <pre>
 <code style="color:red">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
 <code style="color:blue">  descend</code><code> (</code><code style="color:green">person1</code><code> == </code><code style="color:green">owner</code><code>, </code><code style="color:blue">distanceTo</code><code>(</code><code style="color:green">person2</code><code>) == </code><code style="color:green">owner</code><code>))</code>
-<code>}
-</code>
+<code>}</code>
 </pre>
 
 ![map with blue dots](/images/peer-to-peer-1.png)
