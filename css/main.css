@@ -44,12 +44,20 @@ ul.posts li {
 
 h4 {
     color: red;
+    font-size: 1.5em;    
 }
 
 h5 {
     color: blue;
+    font-size: 1.5em;    
 }
 
 h6 {
     color: purple;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: green;
+    font-size: 1.5em;
 }
