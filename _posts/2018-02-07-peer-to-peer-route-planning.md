@@ -17,20 +17,18 @@ The function distanceTo computes the minimum distance from any device to the nea
 <code style="color:purple">    else</code><code> { minHood(</code><code style="color:purple">nbr</code><code>{</code><code style="color:green">d</code><code>} + nbrRange) }</code>
 <code>  }
 }</code>
-
-<code>
-def distanceTo(source) {
-  rep(d <- Infinity) {
-    mux (source) { 0 }
-    else { minHood(nbr{d} + nbrRange) }
-  }
-}
-</code>
 </pre>
 
 The function descend follows the gradient of a potential field down from a source. Given an original device (self) and a potential potential field, this function builds a path of intermediate devices connecting the original device with the source of the potential field. The original device is marked as part of the path. Other devices are identified as being on the path if one of their neighbors is already on the path, and they are the closest of that neighbor's neighbors to the destination.
 
-``` 
+<pre>
+<code style="color:red">def</code><code style="color:blue"> descend</code><code>(</code><code style="color:green">source,potential</code><code>) {</code>
+<code style="color:red">  rep</code><code>(</code><code style="color:green">path</code><code> <- </code><code style="color:green">source</code><code>) {</code>
+<code style="color:red">    let</code><code style="color:green"> nextStep</code><code> = minHood(</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">potential</code><code>, </code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>()]));</code>
+
+
+<pre>
+<code>
 def descend(source,potential) {
   rep(path <- source) {
     let nextStep = minHood(nbr([potential, self.getId()]));
@@ -42,7 +40,8 @@ def descend(source,potential) {
     }
   }
 }
-```
+</code>
+</pre>
 
 The rendezvous function uses the descend function to identify the path between two people.
 
