@@ -31,7 +31,7 @@ The function distanceTo computes the minimum distance from any device to the nea
 
 <pre>
 <code>
-<h4>def</h4> <h5>distanceTo</h5>(<h3>source</h3>) {
+<h4>def</h4><h5> distanceTo</h5>(<h3>source</h3>) {
   rep(d <- Infinity) {
     mux (source) { 0 }
     else { minHood(nbr{d} + nbrRange) }
