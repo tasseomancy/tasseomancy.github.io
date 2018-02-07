@@ -2,10 +2,10 @@
 title: Peer-to-peer route planning
 layout: default
 ---
-<h4> test color 1 </h4>
-<h5> test color 2 </h5>
-<h6> test color 3 </h6>
-<h3> test color 4 </h3>
+<h4> test color 1 red </h4>
+<h5> test color 2 blue </h5>
+<h6> test color 3 purple </h6>
+<h3> test color 4 green </h3>
 
 <pre>
 <code>
@@ -29,14 +29,16 @@ Using some of Protelis’s special operators (purple), a small number of functio
 
 The function distanceTo computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
 
-``` 
-def distanceTo(source) {
+<pre>
+<code>
+<h4>def</h4> <h5>distanceTo</h5>(<h3>source</h3>) {
   rep(d <- Infinity) {
     mux (source) { 0 }
     else { minHood(nbr{d} + nbrRange) }
   }
 }
-```
+</code>
+</pre>
 
 The function descend follows the gradient of a potential field down from a source. Given an original device (self) and a potential potential field, this function builds a path of intermediate devices connecting the original device with the source of the potential field. The original device is marked as part of the path. Other devices are identified as being on the path if one of their neighbors is already on the path, and they are the closest of that neighbor's neighbors to the destination.
 
