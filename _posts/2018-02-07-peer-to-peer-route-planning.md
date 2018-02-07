@@ -23,8 +23,11 @@ The function descend follows the gradient of a potential field down from a sourc
 
 <pre>
 <code style="color:red">def</code><code style="color:blue"> descend</code><code>(</code><code style="color:green">source,potential</code><code>) {</code>
-<code style="color:red">  rep</code><code>(</code><code style="color:green">path</code><code> <- </code><code style="color:green">source</code><code>) {</code>
+<code style="color:purple">  rep</code><code>(</code><code style="color:green">path</code><code> <- </code><code style="color:green">source</code><code>) {</code>
 <code style="color:red">    let</code><code style="color:green"> nextStep</code><code> = minHood(</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">potential</code><code>, </code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>()]));</code>
+<code style="color:purple">    if</code><code>(</code><code style="color:green">nextStep</code><code style="color:blue">.size</code><code>() > 1) {</code>
+<code style="color:red">    let</code><code style="color:green"> candidates</code><code> = (</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">nextStep</code><code style="color:blue">get</code><code>(1), </code><code style="color:green">path</code><code>]);</code>
+<code style="color:green">    source</code><code> || </code><code style="color:purplse">anyHood</code><code>([</code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>(), true] == </code><code style="color:green">candidates</code><code>)</code>
 
 
 <pre>
