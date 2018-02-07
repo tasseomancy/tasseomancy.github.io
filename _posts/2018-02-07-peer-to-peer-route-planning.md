@@ -12,6 +12,7 @@ Using some of Protelis’s special operators (purple), a small number of functio
 ``` distanceTo ```
 
 ``` descend ```
+
 ``` rendezvous ```
 
 ![map with blue dots](/images/peer-to-peer-1.png)
