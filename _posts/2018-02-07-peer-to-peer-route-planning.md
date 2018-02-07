@@ -17,4 +17,6 @@ Code samples and illustrations from a simulation:
 
 ![useful image](http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png) full url
 
+<img src = "http://github.com/tasseomancy.github.io/assets/peer-to-peer-1.png"> html full url not markdown
+
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them wish to meet up.
