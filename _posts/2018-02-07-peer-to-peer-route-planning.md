@@ -15,15 +15,15 @@ Code samples and illustrations from a simulation:
 
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them (Alice and Bob) wish to meet up.
 
-![map with blue dots](/images/peer-to-peer-2.png)
+![map with blue and a few red dots](/images/peer-to-peer-2.png)
 
 Alice and Bob activate their rendezvous application, and nearby devices that are on the shortest path between them start to be selected as part of their rendezvous path (red dots).
 
-![map with blue dots](/images/peer-to-peer-3.png)
+![map with blue and more red dots](/images/peer-to-peer-3.png)
 
 No central information service is needed for peer-to-peer calculation of the shortest path.
 
-![map with blue dots](/images/peer-to-peer-4.png)
+![map with blue and even more red dots](/images/peer-to-peer-4.png)
 
 The complete path is calculated, and will update automatically as Alice and Bob walk toward each other, and as intermediate devices move around.
 
