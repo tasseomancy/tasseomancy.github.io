@@ -5,6 +5,7 @@ layout: default
 <h4> test color 1 </h4>
 <h5> test color 2 </h5>
 <h6> test color 3 </h6>
+<h3> test color 4 </h3>
 
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
 
