@@ -16,7 +16,7 @@ Using some of Protelis’s special operators (purple), a small number of functio
 The function distanceTo computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
 
 <pre>
-<code style="color:red">def</code><code style="color:blue"> distanceTo</code><code style="color:green">(source) {</code>
+<code style="color:red">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
 <code>
 def distanceTo(source) {
   rep(d <- Infinity) {
