@@ -36,11 +36,15 @@ def crowdTracking(p, r, t) {
 <code style="color:purple">  let</code><code style="color:green"> crowdRgn</code><code> = </code><code style="color:blue"> recentTrue</code><code>(</code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) > 1.08, </code><code style="color:green">t</code><code>);</code>
 <code style="color:purple">  if</code><code>(</code><code style="color:green">crowdRgn</code><code>) { </code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) } </code><code style="color:purple">else</code><code> { none }</code>
 <code>}</code>
+</pre>
 
 The function crowdWarning alerts individuals who are near dangerously crowded spots.
 
 <pre>
 <code>
+def crowdWarning(p, r, warn, t) {
+	distanceTo(crowdTracking(p, r, t) == high) < warn
+}
 </code>
 </pre>
 
