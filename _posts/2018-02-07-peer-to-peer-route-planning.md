@@ -12,7 +12,7 @@ The function distanceTo computes the minimum distance from any device to the nea
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
-<code style="color:purple">  rep</code><code>(</code><code style="color:green">d</code><code> <- </code><code style="color:purplse">Infinity</code><code>) {</code>
+<code style="color:purple">  rep</code><code>(</code><code style="color:green">d</code><code> <- </code><code style="color:purple">Infinity</code><code>) {</code>
 <code style="color:purple">    mux</code><code> (</code><code style="color:green">source</code><code>) { 0 }</code>
 <code style="color:purple">    else</code><code> { </code><code style="color:purple">minHood</code><code>(</code><code style="color:purple">nbr</code><code>(</code><code style="color:green">d</code><code>) + </code><code style="color:purple">nbrRange</code><code>) }</code>
 <code>  }
