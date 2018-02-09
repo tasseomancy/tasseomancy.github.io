@@ -5,14 +5,36 @@ layout: default
 Any time an event or attraction draws a crowd, individuals may continue to move into the most crowded areas and inadvertently obstruct egress, creating dangerously dense-packed locations vulnerable to stampedes. In addition to the motivation of avoiding danger, people may also want to avoid highly congested spots because the experience is unpleasant. Distributed sensing and computing can help solve this problem.
 
 Using Protelis and the principles of aggregate programming, it is straightforward to write a scalable and robust distributed application to detect severe crowding and help individuals navigate around highly congested areas. We illustrate the use of several core Protelis operators and built-in functions.
-<b>Code samples and illustrations from a simulation:</b>
-Using some of Protelis’s special operators (purple), a small number of functions (blue) can be defined and applied to variables (green), a crowd safety service can use information about the number of nearby devices to issue warnings about areas with dangerous crowding levels. 
 
-The function dangerousDensity flags whether a location has a high or low danger. The function determines danger by estimating the local density of people, using the values of <i>p</i> (proportion of people with a participating device running this app), <i>r</i> (the radius of interest), and comparing to a density danger cut-off value of 2.17 people per square meter.
+<b>Code samples and illustrations from a simulation:</b>
+
+Using some of Protelis’s special operators and syntax (purple), a small number of functions (blue) can be defined and applied to variables (green). A crowd safety service can use information about the number of nearby devices to issue warnings about areas with dangerous crowding levels. 
+
+The function dangerousDensity flags whether a location has a high or low danger. The function determines danger by estimating the local density of people, using the values of <i>p</i> (proportion of people with a participating device running this app), <i>r</i> (the radius of interest), and checking large groups of people (>300) against a density danger cut-off value of 2.17 people per square meter.
+
+<pre>
+<code>
+def dangerousDensity(p, r) {
+	let mr = managementRegions(r*2), () -> { nbrRange });
+	let danger = average(mr, densityEst(p, r)) > 2.17 && summarize(mr, sum, 1 / p, 0) > 300;
+	if(danger) { high } else {low}
+}
+</code>
+</pre>
 
 The function crowdTracking checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
 
+<pre>
+<code>
+</code>
+</pre>
+
 The function crowdWarning alerts individuals who are near dangerously crowded spots.
+
+<pre>
+<code>
+</code>
+</pre>
 
 ![map with green, yellow, and red dots](/images/marathon.png)
 
