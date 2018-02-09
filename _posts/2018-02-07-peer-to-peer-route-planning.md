@@ -38,7 +38,7 @@ The function descend follows the gradient of a potential field down from a sourc
 The rendezvous function uses the descend function to identify the path between two people, whose devices have been marked with the owner property.
 
 <pre>
-<code style="color:red">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
+<code style="color:purple">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
 <code style="color:blue">  descend</code><code> (</code><code style="color:green">person1</code><code> == </code><code style="color:green">owner</code><code>, </code><code style="color:blue">distanceTo</code><code>(</code><code style="color:green">person2</code><code>) == </code><code style="color:green">owner</code><code>))</code>
 <code>}</code>
 </pre>
