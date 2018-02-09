@@ -5,17 +5,16 @@ layout: default
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
 
 <b>Code samples and illustrations from a simulation:</b>
-(NOTE: Jake wants to switch from this code color scheme to the current Eclipse plugin coloration scheme, which drops the red, blue, and green and does a few more things in purple.)
 
-Using some of Protelis’s special operators (purple), a small number of functions (blue) and be defined and applied to variables (green), “Alice” and “Bob” can be directed toward each other (red dots) through the peer-to-peer calculations performed on participating devices (blue dots). 
+Using some of Protelis’s special operators and syntax (purple), a small number of functions (blue) can be defined and applied to variables (green). “Alice” and “Bob” can be directed toward each other (red dots) through the peer-to-peer calculations performed on participating devices (blue dots). 
 
 The function distanceTo computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
 
 <pre>
-<code style="color:red">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
-<code style="color:red">  rep</code><code>(</code><code style="color:green">d</code><code> <- Infinity) {</code>
+<code style="color:purple">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
+<code style="color:purple">  rep</code><code>(</code><code style="color:green">d</code><code> <- </code><code style="color:purplse">Infinity</code><code>) {</code>
 <code style="color:purple">    mux</code><code> (</code><code style="color:green">source</code><code>) { 0 }</code>
-<code style="color:purple">    else</code><code> { minHood(</code><code style="color:purple">nbr</code><code>(</code><code style="color:green">d</code><code>) + nbrRange) }</code>
+<code style="color:purple">    else</code><code> { </code><code style="color:purple">minHood</code><code>(</code><code style="color:purple">nbr</code><code>(</code><code style="color:green">d</code><code>) + </code><code style="color:purple">nbrRange</code><code>) }</code>
 <code>  }
 }</code>
 </pre>
