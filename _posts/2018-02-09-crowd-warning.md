@@ -32,14 +32,6 @@ The function crowdTracking checks for a dangerous density in crowded areas, wher
 The function crowdWarning alerts individuals who are near dangerously crowded spots.
 
 <pre>
-<code>
-def crowdWarning(p, r, warn, t) {
-	distanceTo(crowdTracking(p, r, t) == high) < warn
-}
-</code>
-</pre>
-
-<pre>
 <code style="color:purple">def</code><code style="color:blue"> crowdWarning</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">warn</code><code>, </code><code style="color:green">t</code><code>) {</code>
 <code style="color:blue">  distanceTo</code><code>(</code><code style="color:blue">crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) == high) < </code><code style="color:green">warn</code>
 <code>}</code>
