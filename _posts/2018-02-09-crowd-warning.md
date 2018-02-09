@@ -23,15 +23,6 @@ The function dangerousDensity flags whether a location has a high or low danger.
 The function crowdTracking checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
 
 <pre>
-<code>
-def crowdTracking(p, r, t) {
-	let crowdRgn = recentTrue(densityEst(p, r) > 1.08, t);
-	if(crowdRgn) { dangerousDensity(p, r) } else { none };
-}
-</code>
-</pre>
-
-<pre>
 <code style="color:purple">def</code><code style="color:blue"> crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) {</code>
 <code style="color:purple">  let</code><code style="color:green"> crowdRgn</code><code> = </code><code style="color:blue"> recentTrue</code><code>(</code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) > 1.08, </code><code style="color:green">t</code><code>);</code>
 <code style="color:purple">  if</code><code>(</code><code style="color:green">crowdRgn</code><code>) { </code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) } </code><code style="color:purple">else</code><code> { none }</code>
@@ -48,6 +39,12 @@ def crowdWarning(p, r, warn, t) {
 </code>
 </pre>
 
+<pre>
+<code style="color:purple">def</code><code style="color:blue"> crowdWarning</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">warn</code><code>, </code><code style="color:green">t</code><code>) {</code>
+<code style="color:blue">  distanceTo</code><code>(</code><code style="color:blue">crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) == high) < </code><code style="color:green">warn</code>
+<code>}</code>
+</pre>
+
 ![map with green, yellow, and red dots](/images/marathon.png)
 
 In this simulation of the 2013 Vienna marathon, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
@@ -55,25 +52,4 @@ In this simulation of the 2013 Vienna marathon, dots represent devices running t
 ![map with blue, yellow, and red dots](/images/crowd-management.jpg)
 
 In this simulation of public events near the Boston waterfront, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
-
-end
-
-<pre>
-<code style="color:red">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
-<code style="color:red">  rep</code><code>(</code><code style="color:green">d</code><code> <- Infinity) {</code>
-<code style="color:purple">    mux</code><code> (</code><code style="color:green">source</code><code>) { 0 }</code>
-<code style="color:purple">    else</code><code> { minHood(</code><code style="color:purple">nbr</code><code>(</code><code style="color:green">d</code><code>) + nbrRange) }</code>
-<code>  }
-}</code>
-</pre>
-
-
-
-
-
-<pre>
-<code style="color:red">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
-<code style="color:blue">  descend</code><code> (</code><code style="color:green">person1</code><code> == </code><code style="color:green">owner</code><code>, </code><code style="color:blue">distanceTo</code><code>(</code><code style="color:green">person2</code><code>) == </code><code style="color:green">owner</code><code>))</code>
-<code>}</code>
-</pre>
 
