@@ -13,39 +13,28 @@ Using some of Protelis’s special operators and syntax (purple), a small number
 The function dangerousDensity flags whether a location has a high or low danger. The function determines danger by estimating the local density of people, using the values of <i>p</i> (proportion of people with a participating device running this app), <i>r</i> (the radius of interest), and checking large groups of people (>300) against a density danger cut-off value of 2.17 people per square meter.
 
 <pre>
-<code>
-def dangerousDensity(p, r) {
-	let mr = managementRegions(r*2), () -> { nbrRange });
-	let danger = average(mr, densityEst(p, r)) > 2.17 && summarize(mr, sum, 1 / p, 0) > 300;
-	if(danger) { high } else {low}
-}
-</code>
-</pre>
-
-<pre>
 <code style="color:purple">def</code><code style="color:blue"> dangerousDensity</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) {</code>
 <code style="color:purple">  let</code><code style="color:green"> mr</code><code> = </code><code style="color:blue"> managementRegions</code><code>(</code><code style="color:green">r</code><code>*2, () -> { </code><code style="color:purple">nbrRange</code><code> });</code>
 <code style="color:purple">  let</code><code style="color:green"> danger</code><code> = </code><code style="color:blue"> average</code><code>(</code><code style="color:green">mr</code><code>, </code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>)) > 2.17</code><code style="color:purple"> &&</code><code style="color:blue"> summarize</code><code>(</code><code style="color:green">mr</code><code>, </code><code style="color:green">sum</code><code>, 1 / </code><code style="color:green">p</code><code>, 0 ) > 300;</code>
-<code style="color:purple">  if</code><code>(</code><code style="color:green">danger</code><code>) { high } else { low }</code>
+<code style="color:purple">  if</code><code>(</code><code style="color:green">danger</code><code>) { high } </code><code style="color:purple">else</code><code> { low }</code>
 <code>}</code>
-
-<code style="color:red">    let</code><code style="color:green"> nextStep</code><code> = minHood(</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">potential</code><code>, </code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>()]));</code>
-<code style="color:purple">    if</code><code>(</code><code style="color:green">nextStep</code><code style="color:blue">.size</code><code>() > 1) {</code>
-<code style="color:red">    let</code><code style="color:green"> candidates</code><code> = (</code><code style="color:purple">nbr</code><code>([</code><code style="color:green">nextStep</code><code style="color:blue">.get</code><code>(1), </code><code style="color:green">path</code><code>]));</code>
-<code style="color:green">    source</code><code> || </code><code style="color:purple">anyHood</code><code>([</code><code style="color:purple">self</code><code style="color:blue">.getId</code><code>(), true] == </code><code style="color:green">candidates</code><code>)</code>
-<code>    } </code><code style="color:purple">else</code><code> {</code>
-<code style="color:green">      source</code>
-<code>    }
-  }
-}</code>
-</pre>
 
 The function crowdTracking checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
 
 <pre>
 <code>
+def crowdTracking(p, r, t) {
+	let crowdRgn = recentTrue(densityEst(p, r) > 1.08, t);
+	if(crowdRgn) { dangerousDensity(p, r) } else { none };
+}
 </code>
 </pre>
+
+<pre>
+<code style="color:purple">def</code><code style="color:blue"> crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) {</code>
+<code style="color:purple">  let</code><code style="color:green"> crowdRgn</code><code> = </code><code style="color:blue"> recentTrue</code><code>(</code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) > 1.08, </code><code style="color:green">t</code><code>);</code>
+<code style="color:purple">  if</code><code>(</code><code style="color:green">crowdRgn</code><code>) { high }</code><code style="color:purple">else</code><code> { none }</code>
+<code>}</code>
 
 The function crowdWarning alerts individuals who are near dangerously crowded spots.
 
