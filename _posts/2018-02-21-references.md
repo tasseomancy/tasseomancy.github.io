@@ -2,7 +2,6 @@
 layout: default
 title: Papers and References for Aggregate Programming and Protelis
 ---
-
 <ul>
         <li>
           <a
