@@ -1,6 +1,6 @@
 ---
-layout = default
-title = Papers and References for Aggregate Programming and Protelis
+layout: default
+title: Papers and References for Aggregate Programming and Protelis
 ---
 
 <ul>
