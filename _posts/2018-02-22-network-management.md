@@ -19,7 +19,9 @@ Each service was wrapped with an embedded Protelis execution engine, which was i
 In this screenshot of the emulated network of services on machines, we see that the supplies database has crashed, triggering a graceful shutdown cascade of dependent services. Upon restart of the supplies database, the rest of the services would automatically restart in the correct order, if each service was running the following Protelis network management code.
 
 <pre>
-<code style="color:purple">def</code><code> nbr_set = </code><code style="color:purple">unionHood</code><code>(</code><code style="color:purple">nbr</code><code>([</code><code style="color:blue">serviceID</code><code>]));</code>
+<code style="color:purple">let</code><code style="color:green"> nbr_set </code><code>= </code><code style="color:purple">unionHood</code><code>(</code><code style="color:purple">nbr</code><code>([</code><code style="color:blue">serviceID</code><code>]));</code>
+<code style="color:purple">let</code><code style="color:green"> nbr_missing </code><code>= </code><code style="color:blue">dependencies.subtract</code><code>(</code><code style="color:green">nbr_set</code><code>);</code>
+
 
 <code style="color:purple">def</code><code style="color:blue"> dangerousDensity</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) {</code>
 <code style="color:purple">  let</code><code style="color:green"> mr</code><code> = </code><code style="color:blue"> managementRegions</code><code>(</code><code style="color:green">r</code><code>*2, () -> { </code><code style="color:purple">nbrRange</code><code> });</code>
