@@ -22,7 +22,7 @@ In this screenshot of the emulated network of services on machines, we see that 
 <code style="color:purple">let</code><code style="color:green"> nbr_set </code><code>= </code><code style="color:purple">unionHood</code><code>(</code><code style="color:purple">nbr</code><code>([</code><code style="color:blue">serviceID</code><code>]));</code>
 <code style="color:purple">let</code><code style="color:green"> nbr_missing </code><code>= </code><code style="color:blue">dependencies</code><code>.</code><code style="color:blue">subtract</code><code>(</code><code style="color:green">nbr_set</code><code>);</code>
 <code style="color:purple">let</code><code style="color:green"> nbr_required </code><code>= </code><code style="color:blue">#contains</code><code>(</code><code style="color:blue">dependencies</code><code>, </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">serviceID</code><code>));</code>
-
+<code style="color:purple">let</code><code style="color:green"> nbr_down </code><code>= </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="hung" || </code><code style="color:blue">managedServiceStatus</code><code>=="stop");</code>
 
 <code style="color:purple">def</code><code style="color:blue"> dangerousDensity</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) {</code>
 <code style="color:purple">  let</code><code style="color:green"> mr</code><code> = </code><code style="color:blue"> managementRegions</code><code>(</code><code style="color:green">r</code><code>*2, () -> { </code><code style="color:purple">nbrRange</code><code> });</code>
