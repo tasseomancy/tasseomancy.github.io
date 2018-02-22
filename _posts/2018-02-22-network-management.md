@@ -23,15 +23,9 @@ In this screenshot of the emulated network of services on machines, we see that 
 <code style="color:purple">let</code><code style="color:green"> nbr_missing </code><code>= </code><code style="color:blue">dependencies</code><code>.</code><code style="color:blue">subtract</code><code>(</code><code style="color:green">nbr_set</code><code>);</code>
 <code style="color:purple">let</code><code style="color:green"> nbr_required </code><code>= </code><code style="color:blue">#contains</code><code>(</code><code style="color:blue">dependencies</code><code>, </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">serviceID</code><code>));</code>
 <code style="color:purple">let</code><code style="color:green"> nbr_down </code><code>= </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="hung" || </code><code style="color:blue">managedServiceStatus</code><code>=="stop");</code>
-
-<code style="color:purple">def</code><code style="color:blue"> dangerousDensity</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) {</code>
-<code style="color:purple">  let</code><code style="color:green"> mr</code><code> = </code><code style="color:blue"> managementRegions</code><code>(</code><code style="color:green">r</code><code>*2, () -> { </code><code style="color:purple">nbrRange</code><code> });</code>
-<code style="color:purple">  let</code><code style="color:green"> danger</code><code> = </code><code style="color:blue"> average</code><code>(</code><code style="color:green">mr</code><code>, </code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>)) > 2.17</code><code style="color:purple"> &&</code><code style="color:blue"> summarize</code><code>(</code><code style="color:green">mr</code><code>, </code><code style="color:green">sum</code><code>, 1 / </code><code style="color:green">p</code><code>, 0 ) > 300;</code>
-<code style="color:purple">  if</code><code>(</code><code style="color:green">danger</code><code>) { high } </code><code style="color:purple">else</code><code> { low }</code>
-<code>}</code>
 </pre>
 
-The function crowdTracking checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
+These variables track the services that should be reachable (<code>nbr_set</code>, the services that are needed but are not reachable (<code>nbr_missing</code>), the services that are required, and the nearby services that are down (<code>nbr_down</code>).
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) {</code>
