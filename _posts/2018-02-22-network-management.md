@@ -25,19 +25,24 @@ In this screenshot of the emulated network of services on machines, we see that 
 <code style="color:purple">let</code><code style="color:green"> nbr_down </code><code>= </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="hung" || </code><code style="color:blue">managedServiceStatus</code><code>=="stop");</code>
 </pre>
 
-These variables track the services that should be reachable (<code>nbr_set</code>, the services that are needed but are not reachable (<code>nbr_missing</code>), the services that are required, and the nearby services that are down (<code>nbr_down</code>).
+These variables track the services that should be reachable (<code>nbr_set</code>), the services that are needed but are not reachable (<code>nbr_missing</code>), the services that are required due to dependencies (<code>nbr_required</code>), and the nearby services that are down (<code>nbr_down</code>).
 
 <pre>
-<code style="color:purple">def</code><code style="color:blue"> crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) {</code>
-<code style="color:purple">  let</code><code style="color:green"> crowdRgn</code><code> = </code><code style="color:blue"> recentTrue</code><code>(</code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) > 1.08, </code><code style="color:green">t</code><code>);</code>
-<code style="color:purple">  if</code><code>(</code><code style="color:green">crowdRgn</code><code>) { </code><code style="color:blue">densityEst</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) } </code><code style="color:purple">else</code><code> { none }</code>
+<code style="color:purple">let</code><code style="color:green"> problem </code><code>= </code><code style="color:purple">anyHood</code><code>(</code><code style="color:green">nbr_down </code><code>&& </code><code style="color:green">nbr_required</code><code>) || !</code><code style="color:green">nbr_missing</code><code>.</code><code style="color:blue">isEmpty</code><code>();</code>
+</pre>
+
+This tracks whether this service is currently safe to run.
+
+<pre>
+<code style="color:purple">if</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="run" && </code><code style="color:green">problem</code><code>) {</code>
+<code style="color:blue">  #stopProcess</code><code>(</code><code style="color:blue">managedService</code><code>);</code>
+<code>} </code><code style="color:purple">else</code><code>  {</code>
+<code style="color:purple">  if</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="stop" && !</code><code style="color:green">problem</code><code>) {</code>
+<code style="color:blue">    #startProcess</code><code>(</code><code style="color:blue">managedService</code><code>);</code>
+<code>  } </code><code style="color:purple">else</code><code>  {</code>
+<code style="color:blue">    managedServiceStatus</code><code>;</code>
+<code>  }</code>
 <code>}</code>
 </pre>
 
-The function crowdWarning alerts individuals who are near dangerously crowded spots.
-
-<pre>
-<code style="color:purple">def</code><code style="color:blue"> crowdWarning</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">warn</code><code>, </code><code style="color:green">t</code><code>) {</code>
-<code style="color:blue">  distanceTo</code><code>(</code><code style="color:blue">crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) == high) < </code><code style="color:green">warn</code>
-<code>}</code>
-</pre>
+This code takes this service down or up, depending on if it is safe to run
