@@ -45,4 +45,4 @@ This tracks whether this service is currently safe to run.
 <code>}</code>
 </pre>
 
-This code takes this service down or up, depending on if it is safe to run
+This code takes this service down or up, depending on if it is safe to run.
