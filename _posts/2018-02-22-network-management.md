@@ -18,6 +18,8 @@ Each service was wrapped with an embedded Protelis execution engine, which was i
 
 In this screenshot of the emulated network of services on machines, we see that the supplies database has crashed, triggering a graceful shutdown cascade of dependent services. Upon restart of the supplies database, the rest of the services would automatically restart in the correct order, if each service was running the following Protelis network management code.
 
+These variables track the services that should be reachable (<code>nbr_set</code>), the services that are needed but are not reachable (<code>nbr_missing</code>), the services that are required due to dependencies (<code>nbr_required</code>), and the nearby services that are down (<code>nbr_down</code>).
+
 <pre>
 <code style="color:purple">let</code><code style="color:green"> nbr_set </code><code>= </code><code style="color:purple">unionHood</code><code>(</code><code style="color:purple">nbr</code><code>([</code><code style="color:blue">serviceID</code><code>]));</code>
 <code style="color:purple">let</code><code style="color:green"> nbr_missing </code><code>= </code><code style="color:blue">dependencies</code><code>.</code><code style="color:blue">subtract</code><code>(</code><code style="color:green">nbr_set</code><code>);</code>
@@ -25,13 +27,13 @@ In this screenshot of the emulated network of services on machines, we see that 
 <code style="color:purple">let</code><code style="color:green"> nbr_down </code><code>= </code><code style="color:purple">nbr</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="hung" || </code><code style="color:blue">managedServiceStatus</code><code>=="stop");</code>
 </pre>
 
-These variables track the services that should be reachable (<code>nbr_set</code>), the services that are needed but are not reachable (<code>nbr_missing</code>), the services that are required due to dependencies (<code>nbr_required</code>), and the nearby services that are down (<code>nbr_down</code>).
+The variable <code>problem</code> tracks whether this service is currently safe to run.
 
 <pre>
 <code style="color:purple">let</code><code style="color:green"> problem </code><code>= </code><code style="color:purple">anyHood</code><code>(</code><code style="color:green">nbr_down </code><code>&& </code><code style="color:green">nbr_required</code><code>) || !</code><code style="color:green">nbr_missing</code><code>.</code><code style="color:blue">isEmpty</code><code>();</code>
 </pre>
 
-This tracks whether this service is currently safe to run.
+This code takes this service down or up, depending on if it is safe to run.
 
 <pre>
 <code style="color:purple">if</code><code>(</code><code style="color:blue">managedServiceStatus</code><code>=="run" && </code><code style="color:green">problem</code><code>) {</code>
@@ -45,4 +47,3 @@ This tracks whether this service is currently safe to run.
 <code>}</code>
 </pre>
 
-This code takes this service down or up, depending on if it is safe to run.
