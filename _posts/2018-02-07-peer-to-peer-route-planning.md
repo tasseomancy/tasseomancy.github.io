@@ -8,7 +8,7 @@ When two people want to meet up at a large event, they may be hampered when a pr
 
 Using some of Protelis’s special operators and syntax (purple), a small number of functions (blue) can be defined and applied to variables (green). “Alice” and “Bob” can be directed toward each other (red dots) through the peer-to-peer calculations performed on participating devices (blue dots). 
 
-The function distanceTo computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
+The function <code>distanceTo</code> computes the minimum distance from any device to the nearest "source device" (a device where source is true). The field d is initially Infinity everywhere, but is set to 0 on sources and set to the minimum across neighbors of the sum of d and the estimated distance to the current device.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> distanceTo</code><code>(</code><code style="color:green">source</code><code>) {</code>
@@ -19,7 +19,7 @@ The function distanceTo computes the minimum distance from any device to the nea
 }</code>
 </pre>
 
-The function descend follows the gradient of a potential field down from a source. Given an original device (self) and a potential potential field, this function builds a path of intermediate devices connecting the original device with the source of the potential field. The original device is marked as part of the path. Other devices are identified as being on the path if one of their neighbors is already on the path, and they are the closest of that neighbor's neighbors to the destination.
+The function <code>descend</code> follows the gradient of a potential field down from a source. Given an original device (self) and a potential potential field, this function builds a path of intermediate devices connecting the original device with the source of the potential field. The original device is marked as part of the path. Other devices are identified as being on the path if one of their neighbors is already on the path, and they are the closest of that neighbor's neighbors to the destination.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> descend</code><code>(</code><code style="color:green">source</code><code>, </code><code style="color:green">potential</code><code>) {</code>
@@ -35,7 +35,7 @@ The function descend follows the gradient of a potential field down from a sourc
 }</code>
 </pre>
 
-The rendezvous function uses the descend function to identify the path between two people, whose devices have been marked with the owner property.
+The <code>rendezvous</code> function uses the descend function to identify the path between two people, whose devices have been marked with the owner property.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> rendezvous</code><code>(</code><code style="color:green">person1</code><code>, </code><code style="color:green">person2</code><code>) {</code>
