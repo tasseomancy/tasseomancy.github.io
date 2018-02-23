@@ -10,7 +10,7 @@ Using Protelis and the principles of aggregate programming, it is straightforwar
 
 Using some of Protelis’s special operators and syntax (purple), a small number of functions (blue) can be defined and applied to variables (green). A crowd safety service can use information about the number of nearby devices to issue warnings about areas with dangerous crowding levels. 
 
-The function dangerousDensity flags whether a location has a high or low danger. The function determines danger by estimating the local density of people, using the values of <i>p</i> (proportion of people with a participating device running this app), <i>r</i> (the radius of interest), and checking large groups of people (>300) against a density danger cut-off value of 2.17 people per square meter.
+The function <code>dangerousDensity</code> flags whether a location has a high or low danger. The function determines danger by estimating the local density of people, using the values of <i>p</i> (proportion of people with a participating device running this app), <i>r</i> (the radius of interest), and checking large groups of people (>300) against a density danger cut-off value of 2.17 people per square meter.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> dangerousDensity</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>) {</code>
@@ -20,7 +20,7 @@ The function dangerousDensity flags whether a location has a high or low danger.
 <code>}</code>
 </pre>
 
-The function crowdTracking checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
+The function <code>crowdTracking</code> checks for a dangerous density in crowded areas, where 1.08 people per square meter is used as the cut-off to define crowded.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> crowdTracking</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">t</code><code>) {</code>
@@ -29,7 +29,7 @@ The function crowdTracking checks for a dangerous density in crowded areas, wher
 <code>}</code>
 </pre>
 
-The function crowdWarning alerts individuals who are near dangerously crowded spots.
+The function <code>crowdWarning</code> alerts individuals who are near dangerously crowded spots.
 
 <pre>
 <code style="color:purple">def</code><code style="color:blue"> crowdWarning</code><code>(</code><code style="color:green">p</code><code>, </code><code style="color:green">r</code><code>, </code><code style="color:green">warn</code><code>, </code><code style="color:green">t</code><code>) {</code>
