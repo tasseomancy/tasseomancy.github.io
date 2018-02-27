@@ -59,4 +59,4 @@ No central information service is needed for peer-to-peer calculation of the sho
 
 The complete path is calculated, and will update automatically as Alice and Bob walk toward each other, and as intermediate devices move around.
 
-
+For more information, see <a href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis: Practical Aggregate Programming</a>, Danilo Pianini, Mirko Viroli, Jacob Beal, ACM Symposium on Applied Computing 2015, April 2015.
