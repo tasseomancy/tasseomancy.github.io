@@ -92,7 +92,6 @@ Additional references
           Programming: From Foundations to Applications</a>,
           Jacob Beal, Mirko Viroli, In: Bernardo M., De Nicola R., Hillston J. (eds) Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems. SFM 2016. Lecture Notes in Computer Science, vol 9700. Springer, Cham
           <br>
-          <em>The first scientific paper presenting Protelis and example
-            applications</em>
+          <em>Crowd density warning example</em>
         </li>
 </ul>
