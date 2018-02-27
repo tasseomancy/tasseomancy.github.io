@@ -85,3 +85,14 @@ href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Cod
       </ul>
 
 Additional references
+
+<ul>
+        <li>
+          <a href="http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf">Aggregate 
+          Programming: From Foundations to Applications</a>,
+          Jacob Beal, Mirko Viroli, In: Bernardo M., De Nicola R., Hillston J. (eds) Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems. SFM 2016. Lecture Notes in Computer Science, vol 9700. Springer, Cham
+          <br>
+          <em>The first scientific paper presenting Protelis and example
+            applications</em>
+        </li>
+</ul>
