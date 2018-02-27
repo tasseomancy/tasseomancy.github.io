@@ -2,7 +2,7 @@
 layout: default
 title: Papers and References for Aggregate Programming and Protelis
 ---
-References and further reading
+If you use Protelis, please reference these foundational papers
 
 <ul>
         <li>
@@ -15,6 +15,19 @@ References and further reading
           <em>The first scientific paper presenting Protelis and example
             applications</em>
         </li>
+        <li>
+          <a
+            href="http://openmap.bbn.com/~jbeal/Publications/Computer-AggregateProgramming-Preprint-2015.pdf">Aggregate
+            Programming for the Internet of Things</a>,
+          Jacob Beal, Danilo Pianini, Mirko Viroli, IEEE Comput. vol. 48, iss. 9, pp.22-30, Septempter 2015.
+          <br>
+          <em>Foundational field calculus and Protelis aggregate programming</em>
+        </li>
+</ul>
+
+These are other key references and further reading
+
+<ul>
         <li>
           <strong>Distributed Recovery for Enterprise Services</strong>
           Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International
@@ -70,3 +83,5 @@ href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Cod
             focus on spatially-distributed networks</em>
         </li>
       </ul>
+
+Additional references
