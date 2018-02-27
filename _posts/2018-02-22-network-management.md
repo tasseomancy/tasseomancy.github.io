@@ -47,3 +47,4 @@ This code takes this service down or up, depending on if it is safe to run.
 <code>}</code>
 </pre>
 
+For more information, see <a href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis: Practical Aggregate Programming</a>, Danilo Pianini, Mirko Viroli, Jacob Beal, ACM Symposium on Applied Computing 2015, April 2015.
