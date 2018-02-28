@@ -2,9 +2,17 @@
 layout: default
 title: Papers and References for Aggregate Programming and Protelis
 ---
-If you use Protelis, please reference these foundational papers
+If you use Protelis, please reference these foundational papers, and read them first.
 
 <ul>
+        <li>
+          <a
+            href="http://openmap.bbn.com/~jbeal/Publications/Computer-AggregateProgramming-Preprint-2015.pdf">Aggregate
+            Programming for the Internet of Things</a>,
+          Jacob Beal, Danilo Pianini, Mirko Viroli, IEEE Computer, 48(9), pp 22–30, September 2015.
+          <br>
+          <em>Foundational field calculus and Protelis aggregate programming</em>
+        </li>
         <li>
           <a
             href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis:
@@ -15,17 +23,31 @@ If you use Protelis, please reference these foundational papers
           <em>The first scientific paper presenting Protelis and example
             applications</em>
         </li>
-        <li>
-          <a
-            href="http://openmap.bbn.com/~jbeal/Publications/Computer-AggregateProgramming-Preprint-2015.pdf">Aggregate
-            Programming for the Internet of Things</a>,
-          Jacob Beal, Danilo Pianini, Mirko Viroli, IEEE Comput. vol. 48, iss. 9, pp.22-30, Septempter 2015.
-          <br>
-          <em>Foundational field calculus and Protelis aggregate programming</em>
-        </li>
 </ul>
 
-These are other key references and further reading
+Top 8 additional references for further reading
+
+<ul>
+        <li><a href="">A Type-Sound Calculus of Computational Fields</a>, 
+Ferruccio Damiani, Mirko Viroli, Jacob Beal, Science of Computer Programming, Volume 117, pp 17–44, February 2016.
+        </li>
+        <li><a href="">Efficient Engineering of Complex Self-Organizing Systems by Self-Stabilising Fields</a>,
+Mirko Viroli, Jacob Beal, Ferruccio Damiani, and Danilo Pianini, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015.
+        </li>
+        <li><a href="">Self-Adaptation to Device Distribution in the Internet of Things</a>,
+Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, ACM Transactions on Autonomous and Adaptive Systems, 12 (3), article 12, September 2017.
+        </li>
+        <li><a href="">Organizing the Aggregate: Languages for Spatial Computing</a>,Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, Nikolaus Correll, chapter in “Formal and Practical Aspects of Domain-Specific Languages: Recent Developments,” edited by Marjan Mernik, IGI Global, December 2012.
+        </li>
+        <li><a href="">Code Mobility Meets Self-organisation: a Higher-order Calculus of Computational Fields</a>,Ferruccio Damiani, Mirko Viroli, Danilo Pianini, and Jacob Beal, Formal Techniques for Distributed Objects, Components, and Systems (FORTE), pp. 113-128, June 2015.
+        </li>
+        <li><a href="">Towards a Foundational API for Resilient Distributed Systems Design</a>, Matteo Francia, Danilo Pianini, Jacob Beal, and Mirko Viroli, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2017.
+        </li>
+        <li><a href="">Building blocks for aggregate programming of self-organising applications</a>, Jacob Beal and Mirko Viroli, Workshop on Fundamental of Collective Adaptive Systems (FoCAS), September 2014.
+        </li>
+        <li><a href="">Towards a Unified Model of Spatial Computing</a>,Jacob Beal, Mirko Viroli, and Ferruccio Damiani, 7th Spatial Computing Workshop (SCW’14), May 2014.
+        </li>
+</ul>
 
 <ul>
         <li>
