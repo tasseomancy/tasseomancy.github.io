@@ -36,6 +36,9 @@ Ferruccio Damiani, Mirko Viroli, Jacob Beal, Science of Computer Programming, Vo
         <li><a href="https://aperto.unito.it/retrieve/handle/2318/1649733/364205/ACM-TAAS-Beal-et-al-2017-OPEN.pdf">Self-Adaptation to Device Distribution in the Internet of Things</a>, Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, ACM Transactions on Autonomous and Adaptive Systems, 12 (3), article 12, September 2017.
         </li>
         <li><a href="https://arxiv.org/pdf/1202.5509">Organizing the Aggregate: Languages for Spatial Computing</a>, Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, Nikolaus Correll, chapter in “Formal and Practical Aspects of Domain-Specific Languages: Recent Developments,” edited by Marjan Mernik, IGI Global, December 2012.
+          <br>
+          <em>A survey of other aggregate programming approaches, with a
+            focus on spatially-distributed networks</em>                
         </li>
         <li><a href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Code Mobility Meets Self-organisation: a Higher-order Calculus of Computational Fields</a>, Ferruccio Damiani, Mirko Viroli, Danilo Pianini, and Jacob Beal, Formal Techniques for Distributed Objects, Components, and Systems (FORTE), pp. 113-128, June 2015.
         </li>
@@ -92,17 +95,6 @@ href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Cod
           <em>Larger picture of field calculus and general approach to
             aggregate programming, with a focus on spatially-distributed
             systems</em>
-        </li>
-        <li>
-          <a href="http://arxiv.org/abs/1202.5509">Organizing the
-            Aggregate: Languages for Spatial Computing</a>
-          Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, and
-          Nikolaus Correll, chapter in "Formal and Practical Aspects of
-          Domain-Specific Languages: Recent Developments", ed. Marjan
-          Mernik, IGI Global, December 2012.
-          <br>
-          <em>A survey of other aggregate programming approaches, with a
-            focus on spatially-distributed networks</em>
         </li>
         <li>
           <a href="http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf">Aggregate 
