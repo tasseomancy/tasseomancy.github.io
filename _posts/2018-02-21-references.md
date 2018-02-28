@@ -52,15 +52,81 @@ Ferruccio Damiani, Mirko Viroli, Jacob Beal, Science of Computer Programming, Vo
 
 Additional references
 
+<strong>Journal Articles</strong>
+
+<ul>
+        <li>Jacob Beal and Mirko Viroli, Formal Foundations of Sensor Network Applications, SIGSPATIAL Special, Volume 7, Number 2, pp 36–42, July 2015.
+        </li>
+        <li>
+          <a
+            href="http://rsta.royalsocietypublishing.org/content/373/2046/20140220">Space-time
+            Programming</a>, Jacob Beal and Mirko Viroli, Philosophical
+          Transactions of the Royal Society A, Volume 373, Issue 2046,
+          pages 20140220, June 2015.
+          <br>
+          <em>Larger picture of field calculus and general approach to
+            aggregate programming, with a focus on spatially-distributed
+            systems</em>
+        </li>
+        <li>Jacob Beal, Superdiffusive Dispersion and Mixing of Swarms, ACM Transactions on Autonomous and Adaptive Systems, Vol. 10, No. 2, Article 10, June 2015.
+        </li>
+        <li>Jacob Beal, Kyle Usbeck, and Brett Benyo, On the Evaluation of Space-Time Functions, The Computer Journal, 56 (12), pp. 1500-1517, December 2013.
+        </li>
+</ul>
+    
+<strong>Book Chapters</strong>
+
 <ul>
         <li>
+          <a href="http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf">Aggregate 
+          Programming: From Foundations to Applications</a>,
+          Jacob Beal, Mirko Viroli, chapter in “Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems.” ed. Marco Bernardo, Rocco De Nicola, and Jane Hillston, Springer International Publishing, pp 233-260, June 2016.
+          <br>
+          <em>Crowd density warning example</em>
+        </li>
+</ul>
+
+<strong>Peer-Reviewed Conference Articles</strong>
+
+<ul>
+        <li>Soura Dasgupta and Jacob Beal, A Lyapunov Analysis for the Robust Stability of an Adaptive Bellman-Ford Algorithm IEEE Conference on Decision and Control (CDC), December 2016.
+        </li>
+        <li>Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, Self-adaptation to Device Distribution Changes, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2016. Received Best Paper Award.
+        </li>
+        <li>Danilo Pianini, Jacob Beal, and Mirko Viroli, Improving gossip dynamics through overlapping replicates, International Conference on Coordination Languages and Models, June 2016.
+        </li>
+        <li>Jacob Beal, Kyle Usbeck, Joseph Loyall, and James Metzler, Opportunistic Sharing of Airborne Sensors, International Conference on Distributed Computing in Sensor Systems (DCOSS), May, 2016.
+        </li>
+<li>
           <strong>Distributed Recovery for Enterprise Services</strong>
-          Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International
-          Conference on Self-Adaptive and Self-Organizing Systems, to
-          appear September 2015.
+          Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015.
           <br>
           <em>Protelis applied to fast, low-impact automated recovery of
             enterprise systems</em>
+        </li>        
+        <li>Jacob Beal, Superdiffusive Dispersion and Mixing of Swarms with Reactive Levy Walks, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO 2013), September 2013.
+        </li>
+</ul>
+
+<strong>Peer-Reviewed Conference Abstracts</strong>
+
+<ul>
+        <li>Danilo Pianini, Mirko Viroli, and Jacob Beal, Engineering multi-agent systems with aggregate computing, Principles and Practice of Multi-Agent Systems (PRIMA 2015), October 2015. 
+        </li>
+</ul>
+
+<strong>Workshops, Symposia, and Seminars</strong>
+
+<ul>
+        <li>Yuanqiu Mo, Jacob Beal, and Soura Dasgupta, Error in Self-Stabilizing Spanning-Tree Estimation of Collective State, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2017.
+        </li>
+        <li>Jacob Beal, Kyle Usbeck, Joseph Loyall, Mason Rowe, and James Metzler Adaptive Task Reallocation for Airborne Sensor Sharing, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
+        </li>
+        <li>Mirko Viroli, Antonio Bucchiarone, Danilo Pianini, and Jacob Beal, Combining Self-Organisation and Autonomic Computing in CASs with Aggregate-MAPE, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
+        </li>
+        <li>Mirko Viroli and Jacob Beal, Resiliency with Aggregate Computing: State of the Art and Roadmap, FORmal methods for the quantitative Evaluation of Collective Adaptive SysTems (FORECAST), July 2016.
+        </li>
+        <li>Amy Kumar, Jacob Beal, Soura Dasgupta, Raghuraman Mudumbai, Toward Predicting Distributed Systems Dynamics, Spatial and COllective PErvasive Computing Systems (SCOPES), September 2015.
         </li>
         <li>
           <a
@@ -72,7 +138,14 @@ Additional references
           <br>
           <em>Field calculus is the mathematical/theoretical foundation
             of Protelis</em>
+        </li>        
+        <li>Jacob Beal, Accelerating Approximate Consensus with Self-Organizing Overlays, 6th Spatial Computing Workshop, May 2013.
         </li>
+        <li>Jacob Beal, A Tactical Command Approach to Human Control of Vehicle Swarms, AAAI 2012 Fall Symposium “Human Control of Bio-Inspired Swarms,” November 2012.
+        </li>
+</ul>
+        
+
 <!--        <li>
           <a
 href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Code
@@ -85,22 +158,3 @@ href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Cod
           <em>Higher-order field calculus lets Protelis have first-class
             functions</em>
         </li> -->
-        <li>
-          <a
-            href="http://rsta.royalsocietypublishing.org/content/373/2046/20140220">Space-time
-            Programming</a>, Jacob Beal and Mirko Viroli, Philosophical
-          Transactions of the Royal Society A, Volume 373, Issue 2046,
-          pages 20140220, June 2015.
-          <br>
-          <em>Larger picture of field calculus and general approach to
-            aggregate programming, with a focus on spatially-distributed
-            systems</em>
-        </li>
-        <li>
-          <a href="http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf">Aggregate 
-          Programming: From Foundations to Applications</a>,
-          Jacob Beal, Mirko Viroli, In: Bernardo M., De Nicola R., Hillston J. (eds) Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems. SFM 2016. Lecture Notes in Computer Science, vol 9700. Springer, Cham
-          <br>
-          <em>Crowd density warning example</em>
-        </li>
-</ul>
