@@ -33,9 +33,9 @@ Ferruccio Damiani, Mirko Viroli, Jacob Beal, Science of Computer Programming, Vo
         </li>
         <li><a href="https://pdfs.semanticscholar.org/ec05/b8d4d3b29c55e492eee22f8bf96f692d2b4b.pdf">Efficient Engineering of Complex Self-Organizing Systems by Self-Stabilising Fields</a>, Mirko Viroli, Jacob Beal, Ferruccio Damiani, and Danilo Pianini, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015.
         </li>
-        <li><a href="">Self-Adaptation to Device Distribution in the Internet of Things</a>, Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, ACM Transactions on Autonomous and Adaptive Systems, 12 (3), article 12, September 2017.
+        <li><a href="https://aperto.unito.it/retrieve/handle/2318/1649733/364205/ACM-TAAS-Beal-et-al-2017-OPEN.pdf">Self-Adaptation to Device Distribution in the Internet of Things</a>, Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, ACM Transactions on Autonomous and Adaptive Systems, 12 (3), article 12, September 2017.
         </li>
-        <li><a href="https://aperto.unito.it/retrieve/handle/2318/1649733/364205/ACM-TAAS-Beal-et-al-2017-OPEN.pdf">Organizing the Aggregate: Languages for Spatial Computing</a>, Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, Nikolaus Correll, chapter in “Formal and Practical Aspects of Domain-Specific Languages: Recent Developments,” edited by Marjan Mernik, IGI Global, December 2012.
+        <li><a href="https://arxiv.org/pdf/1202.5509">Organizing the Aggregate: Languages for Spatial Computing</a>, Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, Nikolaus Correll, chapter in “Formal and Practical Aspects of Domain-Specific Languages: Recent Developments,” edited by Marjan Mernik, IGI Global, December 2012.
         </li>
         <li><a href="http://jakebeal.com/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Code Mobility Meets Self-organisation: a Higher-order Calculus of Computational Fields</a>, Ferruccio Damiani, Mirko Viroli, Danilo Pianini, and Jacob Beal, Formal Techniques for Distributed Objects, Components, and Systems (FORTE), pp. 113-128, June 2015.
         </li>
