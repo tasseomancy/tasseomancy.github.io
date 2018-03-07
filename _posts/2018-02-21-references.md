@@ -69,9 +69,9 @@ Additional references
             aggregate programming, with a focus on spatially-distributed
             systems</em>
         </li>
-        <li>Jacob Beal, Superdiffusive Dispersion and Mixing of Swarms, ACM Transactions on Autonomous and Adaptive Systems, Vol. 10, No. 2, Article 10, June 2015.
+        <li><strong>Superdiffusive Dispersion and Mixing of Swarms</strong>, Jacob Beal, ACM Transactions on Autonomous and Adaptive Systems, Vol. 10, No. 2, Article 10, June 2015.
         </li>
-        <li>Jacob Beal, Kyle Usbeck, and Brett Benyo, On the Evaluation of Space-Time Functions, The Computer Journal, 56 (12), pp. 1500-1517, December 2013.
+        <li><strong>On the Evaluation of Space-Time Functions</strong>, Jacob Beal, Kyle Usbeck, and Brett Benyo, The Computer Journal, 56 (12), pp. 1500-1517, December 2013.
         </li>
 </ul>
     
@@ -90,44 +90,43 @@ Additional references
 <strong>Peer-Reviewed Conference Articles</strong>
 
 <ul>
-        <li>Soura Dasgupta and Jacob Beal, A Lyapunov Analysis for the Robust Stability of an Adaptive Bellman-Ford Algorithm IEEE Conference on Decision and Control (CDC), December 2016.
+        <li><strong>A Lyapunov Analysis for the Robust Stability of an Adaptive Bellman-Ford Algorithm</strong>, Soura Dasgupta and Jacob Beal, IEEE Conference on Decision and Control (CDC), December 2016.
         </li>
-        <li>Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, Self-adaptation to Device Distribution Changes, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2016. Received Best Paper Award.
+        <li><strong>Self-adaptation to Device Distribution Changes</strong>, Jacob Beal, Mirko Viroli, Danilo Pianini, and Ferruccio Damiani, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2016. Received Best Paper Award.
         </li>
-        <li>Danilo Pianini, Jacob Beal, and Mirko Viroli, Improving gossip dynamics through overlapping replicates, International Conference on Coordination Languages and Models, June 2016.
+        <li><strong>Improving gossip dynamics through overlapping replicates</strong>, Danilo Pianini, Jacob Beal, and Mirko Viroli, International Conference on Coordination Languages and Models, June 2016.
         </li>
-        <li>Jacob Beal, Kyle Usbeck, Joseph Loyall, and James Metzler, Opportunistic Sharing of Airborne Sensors, International Conference on Distributed Computing in Sensor Systems (DCOSS), May, 2016.
+        <li><strong>Opportunistic Sharing of Airborne Sensors</strong>, Jacob Beal, Kyle Usbeck, Joseph Loyall, and James Metzler, International Conference on Distributed Computing in Sensor Systems (DCOSS), May, 2016.
         </li>
 <li>
-          <strong>Distributed Recovery for Enterprise Services</strong>
-          Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015.
+          <strong>Distributed Recovery for Enterprise Services</strong>, Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO), September 2015.
           <br>
           <em>Protelis applied to fast, low-impact automated recovery of
             enterprise systems</em>
         </li>        
-        <li>Jacob Beal, Superdiffusive Dispersion and Mixing of Swarms with Reactive Levy Walks, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO 2013), September 2013.
+        <li><strong>Superdiffusive Dispersion and Mixing of Swarms with Reactive Levy Walks</strong>, Jacob Beal, IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO 2013), September 2013.
         </li>
 </ul>
 
 <strong>Peer-Reviewed Conference Abstracts</strong>
 
 <ul>
-        <li>Danilo Pianini, Mirko Viroli, and Jacob Beal, Engineering multi-agent systems with aggregate computing, Principles and Practice of Multi-Agent Systems (PRIMA 2015), October 2015. 
+        <li><strong>Engineering multi-agent systems with aggregate computing</strong>, Danilo Pianini, Mirko Viroli, and Jacob Beal, Principles and Practice of Multi-Agent Systems (PRIMA 2015), October 2015. 
         </li>
 </ul>
 
 <strong>Workshops, Symposia, and Seminars</strong>
 
 <ul>
-        <li>Yuanqiu Mo, Jacob Beal, and Soura Dasgupta, Error in Self-Stabilizing Spanning-Tree Estimation of Collective State, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2017.
+        <li><strong>Error in Self-Stabilizing Spanning-Tree Estimation of Collective State</strong>, Yuanqiu Mo, Jacob Beal, and Soura Dasgupta, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2017.
         </li>
-        <li>Jacob Beal, Kyle Usbeck, Joseph Loyall, Mason Rowe, and James Metzler Adaptive Task Reallocation for Airborne Sensor Sharing, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
+        <li><strong>Adaptive Task Reallocation for Airborne Sensor Sharing</strong>, Jacob Beal, Kyle Usbeck, Joseph Loyall, Mason Rowe, and James Metzler, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
         </li>
-        <li>Mirko Viroli, Antonio Bucchiarone, Danilo Pianini, and Jacob Beal, Combining Self-Organisation and Autonomic Computing in CASs with Aggregate-MAPE, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
+        <li><strong>Combining Self-Organisation and Autonomic Computing in CASs with Aggregate-MAPE</strong>, Mirko Viroli, Antonio Bucchiarone, Danilo Pianini, and Jacob Beal, Workshop on Engineering Collective Adaptive Systems (eCAS), September 2016.
         </li>
-        <li>Mirko Viroli and Jacob Beal, Resiliency with Aggregate Computing: State of the Art and Roadmap, FORmal methods for the quantitative Evaluation of Collective Adaptive SysTems (FORECAST), July 2016.
+        <li><strong>Resiliency with Aggregate Computing: State of the Art and Roadmap</strong>, Mirko Viroli and Jacob Beal, FORmal methods for the quantitative Evaluation of Collective Adaptive SysTems (FORECAST), July 2016.
         </li>
-        <li>Amy Kumar, Jacob Beal, Soura Dasgupta, Raghuraman Mudumbai, Toward Predicting Distributed Systems Dynamics, Spatial and COllective PErvasive Computing Systems (SCOPES), September 2015.
+        <li><strong>Toward Predicting Distributed Systems Dynamics</strong>, Amy Kumar, Jacob Beal, Soura Dasgupta, Raghuraman Mudumbai, Spatial and COllective PErvasive Computing Systems (SCOPES), September 2015.
         </li>
         <li>
           <a
@@ -140,9 +139,9 @@ Additional references
           <em>Field calculus is the mathematical/theoretical foundation
             of Protelis</em>
         </li>        
-        <li>Jacob Beal, Accelerating Approximate Consensus with Self-Organizing Overlays, 6th Spatial Computing Workshop, May 2013.
+        <li><strong>Accelerating Approximate Consensus with Self-Organizing Overlays</strong>, Jacob Beal, 6th Spatial Computing Workshop, May 2013.
         </li>
-        <li>Jacob Beal, A Tactical Command Approach to Human Control of Vehicle Swarms, AAAI 2012 Fall Symposium “Human Control of Bio-Inspired Swarms,” November 2012.
+        <li><strong>A Tactical Command Approach to Human Control of Vehicle Swarms</strong>, Jacob Beal, AAAI 2012 Fall Symposium “Human Control of Bio-Inspired Swarms,” November 2012.
         </li>
 </ul>
         
