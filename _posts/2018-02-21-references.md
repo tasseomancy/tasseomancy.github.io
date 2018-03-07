@@ -56,8 +56,7 @@ Additional references
 
 <ul>
         <li>
-                <strong>Formal Foundations of Sensor Network Applications, </strong>
-                Jacob Beal and Mirko Viroli, SIGSPATIAL Special, Volume 7, Number 2, pp 36–42, July 2015.
+        <strong>Formal Foundations of Sensor Network Applications</strong>, Jacob Beal and Mirko Viroli, SIGSPATIAL Special, Volume 7, Number 2, pp 36–42, July 2015.
         </li>
         <li>
           <a
