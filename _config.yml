@@ -1,3 +1,5 @@
 oldname: Tasseomancy for everyone
 name: The Protelis programming language for aggregate programming
 markdown: kramdown
+
+theme: jekyll-theme-cayman
