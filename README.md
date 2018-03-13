@@ -1,2 +1,2 @@
 # tasseomancy.github.io
-The art of divination using tea leaves
+Practical aggregate programming, hosted in Java
