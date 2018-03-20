@@ -37,11 +37,11 @@ The function <code>crowdWarning</code> alerts individuals who are near dangerous
 <code>}</code>
 </pre>
 
-![map with green, yellow, and red dots](/images/marathon.png){:width="500px"}
+![map with green, yellow, and red dots](/images/marathon.png)
 
 In this simulation of the 2013 Vienna Marathon, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
 
-![map with blue, yellow, and red dots](/images/crowd-management.jpg){:width="500px"}
+<img src="/images/crowd-management.jpg" alt="map with blue, yellow, and red dots" width="500">
 
 In this simulation of public events near the Boston waterfront, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
 
