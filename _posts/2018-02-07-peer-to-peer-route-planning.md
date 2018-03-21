@@ -1,5 +1,5 @@
 ---
-title: Peer-to-peer route planning
+title: Peer-to-peer route planning and distribution of software updates
 layout: default
 ---
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
@@ -61,12 +61,7 @@ The complete path is calculated, and will update automatically as Alice and Bob 
 
 For more information, see <a href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis: Practical Aggregate Programming</a>, Danilo Pianini, Mirko Viroli, Jacob Beal, ACM Symposium on Applied Computing 2015, April 2015.
 
-<!--
-Accelerated video of the Alchemist simulation of an upgradable crowd tracking application written in Protelis. Each dot is a handheld device. Devices move according to real world traces of the 2013 Vienna City Marathon (more information on this paper: https://link.springer.com/chapter/10.1007/978-3-319-03260-3_18).
-All devices begin with the Protelis process scheduler installed, but with no actual application running. Black dots are devices in such status: they are not running the application. Then, a first version of the crowd tracking application is injected in a handful of randomly chosen devices. The aggregate scheduler spreads it on neighbouring nodes. Nodes running the first version of the application turn blue. Red shadow indicate overcrowding detected by the distributed application.
-After some time, a second version of the crowd detection app, with a less conservative estimation of crowd danger is injected in randomly chosen devices. The aggregate scheduler spreads it around, and devices reached can upgrade their application. The red shadows shrink as a consequence of the new version of the app taking over the old, too conservative version.
-More information about the application and its implementation can be found in this paper: http://ieeexplore.ieee.org/document/7274429/
-Details on the Alchemist simulator are available at https://alchemistsimulator.github.io/
-Details on the Protelis programming language are available at http://www.protelis.org
+In addition to peer-to-peer calculations, Protelis applications can take advantage of peer-to-peer communications to distribute software updates. This is an accelerate video of an Alchemist simulation of an upgradable crowd tracking applications. Each block dot represents a device with the Protelis process scheduler installed, but with no specific crowd tracking application running. Blue dots represent randomly selected devices injected with the crowd tracking application, which spreads through the aggregate scheduler to nearby devices. The red shadow shows detection of overcrowding by this version of the crowd tracker, which is judged to be too conservative. An updated version of the crowd tracker with a corrected overcrowding detection algorithm is then injected and spread through the aggregate scheduler, and the red shadow shrinks as the better danger estimation scheme takes over.
 <video src="/images/mapehd-small-h264.mp4" width="320" height="200" controls preload></video>
--->
+
+For more information, see this <a href="https://link.springer.com/chapter/10.1007/978-3-319-03260-3_18>paper</a>.
